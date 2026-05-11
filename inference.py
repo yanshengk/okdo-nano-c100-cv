@@ -6,7 +6,7 @@ import threading
 
 # ── Config ────────────────────────────────────────────────────────────────────
 MODEL_PATH   = "yolo26n.onnx"
-VIDEO_SOURCE = "your_video.mp4"
+VIDEO_SOURCE = "commercial.mp4"
 INPUT_SIZE   = (640, 640)
 CONF_THRESH  = 0.5
 
@@ -92,7 +92,7 @@ def draw(frame, detections):
 
         cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
         cv2.putText(frame, label, (x1, y1 - 8),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
     return frame
 
 # ── Inference thread ──────────────────────────────────────────────────────────
