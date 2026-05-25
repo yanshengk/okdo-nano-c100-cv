@@ -176,7 +176,7 @@ Your project files are available at `/workspace` in the container.
 
 ## 7. Run Inference
 
-Navigate to the workspace and run the inference script:
+In the container, navigate to the `/workspace` and run the inference script:
 
 ```bash
 cd /workspace
