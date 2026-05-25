@@ -2,6 +2,18 @@
 
 A step-by-step guide to running object detection using [Ultralytics YOLO26](https://docs.ultralytics.com/models/yolo26) on the Okdo Nano C100 development board, with a live preview served over HTTP.
 
+## Project Structure
+
+```
+okdo-nano-c100-cv/
+├── assets              # Assets for README.md
+├── bus.jpg             # Image source
+├── commercial.mp4      # Video source
+├── inference.py        # Main inference and streaming script
+├── yolo26n.pt          # YOLO26n model weights
+└── README.md           # This file
+```
+
 ## Table of Contents
 
 - [Requirements](#requirements)
@@ -44,7 +56,7 @@ A step-by-step guide to running object detection using [Ultralytics YOLO26](http
 4. Wait for the board to boot to the desktop.
 
 <p align="center">
-    <img src="assets/initial_boot_desktop.png" width=80%>
+    <img src="assets/initial_boot_desktop.png" width=100%>
 </p>
 
 ## 3. Verify Docker
@@ -114,7 +126,7 @@ jtop
 ```
 
 <p align="center">
-    <img src="assets/jtop.png" width=80%>
+    <img src="assets/jtop.png" width=100%>
 </p>
 
 To exit, simply press `q` in the terminal.
@@ -152,10 +164,10 @@ docker run -it \
 | `-v` | Mounts your project folder into `/workspace` inside the container |
 | `-p 8080:8080` | Exposes port 8080 for the HTTP stream |
 
-After running the command, your terminal will be inside the container. You will see `root@<random_string>:/ultralytics#` instead of your username in the terminal. 
+After running the command, your terminal will be inside the container. You will see `root@<random_string>:/ultralytics#` instead of your username and hostname in the terminal. 
 
 <p align="center">
-    <img src="assets/running_docker_container.png" width=80%>
+    <img src="assets/running_docker_container.png" width=100%>
 </p>
 
 Your project files are available at `/workspace` in the container.
@@ -211,14 +223,3 @@ docker rm ultralytics_dev
 ```
 
 > Removing the container does not delete your project files — they are stored in the project folder on the host and persist independently.
-
-## Project Structure
-
-```
-okdo-nano-c100-cv/
-├── bus.jpg             # Image source
-├── commercial.mp4      # Video source
-├── inference.py        # Main inference and streaming script
-├── yolo26n.pt          # YOLO26n model weights
-└── README.md           # This file
-```
