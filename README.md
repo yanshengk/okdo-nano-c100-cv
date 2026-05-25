@@ -89,7 +89,9 @@ Verify it works after rebooting:
 docker ps
 ```
 
-[INSERT IMAGE HERE]
+<p align="center">
+    <img src="assets/docker_ps.png" width=100%>
+</p>
 
 ## 4. Install Jetson Stats
 
