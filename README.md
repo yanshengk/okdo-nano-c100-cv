@@ -43,7 +43,11 @@ okdo-nano-c100-cv/
 4. Flash and wait for it to complete.
 5. Insert the MicroSD card into the board.
 
-[Watch Video Here](assets/flash.MOV)
+<p align="center">
+    <a href="https://youtu.be/s89F3i4BqMY">
+        Watch the walk-through video here.
+    </a>
+</p>
 
 ## 2. Initial Board Setup
 
@@ -51,7 +55,11 @@ okdo-nano-c100-cv/
 2. Power on the board.
 3. Follow the on-screen setup (accept the license agreements, select language and region, create a user account, select power mode, etc.).
 
-[Watch Video Here](assets/setup.MOV)
+<p align="center">
+    <a href="https://youtu.be/QNntZAwKqjw">
+        Watch the walk-through video here.
+    </a>
+</p>
 
 4. Wait for the board to boot to the desktop.
 
